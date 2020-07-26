@@ -1,0 +1,138 @@
+{
+  "1": {
+    "id": "HDA1",
+    "species": "hoadai",
+    "name": "Hoa Cỏ Tím",
+    "imgdir": "assets/nhhoa/HDA1-HoaDai/",
+    "price": "79.000 VNĐ/Chậu",
+    "description": "Hoa cỏ tím"
+  },
+  "2": {
+    "id": "HDA2",
+    "species": "hoadai",
+    "name": "Sống Đời Đỏ",
+    "imgdir": "assets/nhhoa/HDA2-HoaDai/",
+    "price": "79.000 VNĐ/Chậu",
+    "description": "Sống Đời Đỏ"
+  },
+  "3": {
+    "id": "HDA3",
+    "species": "hoadai",
+    "name": "Hoa Nhỏ Xanh",
+    "imgdir": "assets/nhhoa/HDA3-HoaDai/",
+    "price": "79.000 VNĐ/Chậu",
+    "description": "Hoa Nhỏ Xanh"
+  },
+  "4": {
+    "id": "HDA4",
+    "species": "hoadai",
+    "name": "Sống Đời Vàng",
+    "imgdir": "assets/nhhoa/HDA4-HoaDai/",
+    "price": "79.000 VNĐ/Chậu",
+    "description": "Sống Đời Vàng"
+  },
+  "5": {
+    "id": "HDA5",
+    "species": "hoadai",
+    "name": "Cỏ May Mắn",
+    "imgdir": "assets/nhhoa/HDA5-HoaDai/",
+    "price": "79.000 VNĐ/Chậu",
+    "description": "Cỏ May Mắn"
+  },
+  "6": {
+    "id": "HLA1",
+    "species": "hoalan",
+    "name": "Lan Tím",
+    "imgdir": "assets/nhhoa/HLA1-HoaLanTim/",
+    "price": "179.000 VNĐ/Chậu",
+    "description": "Lan Tím"
+  },
+  "7": {
+    "id": "HLA2",
+    "species": "hoalan",
+    "name": "Lan Vàng Hồng",
+    "imgdir": "assets/nhhoa/HLA2-HoaLanVangHong/",
+    "price": "179.000 VNĐ/Chậu",
+    "description": "Lan Vàng Hồng"
+  },
+  "8": {
+    "id": "HLA3",
+    "species": "hoalan",
+    "name": "Lan Nữ Hoàng",
+    "imgdir": "assets/nhhoa/HLA3-HoaLanNuHoang/",
+    "price": "119.000 VNĐ/Chậu",
+    "description": "Lan Nữ Hoàng"
+  },
+  "9": {
+    "id": "HHO1",
+    "species": "hoahong",
+    "name": "Hoa Hồng",
+    "imgdir": "assets/nhhoa/HHO1-HoaHong/",
+    "price": "12.000 VNĐ/Cành",
+    "description": "Hoa Hồng"
+  },
+  "10": {
+    "id": "HHO2",
+    "species": "hoahong",
+    "name": "Hoa Hồng Vàng",
+    "imgdir": "assets/nhhoa/HHO2-HoaHongVang/",
+    "price": "12.000 VNĐ/Cành",
+    "description": "Hoa Hồng Vàng"
+  },
+  "11": {
+    "id": "HHO3",
+    "species": "hoahong",
+    "name": "Hoa Hồng Vàng",
+    "imgdir": "assets/nhhoa/HHO3-HoaHongVang/",
+    "price": "249.000 VNĐ/Chậu",
+    "description": "Hoa Hồng Vàng"
+  },
+  "12": {
+    "id": "HSE1",
+    "species": "hoasen",
+    "name": "Hoa Sen",
+    "imgdir": "assets/nhhoa/HSE1-HoaSen/",
+    "price": "199.000 VNĐ/Chậu",
+    "description": "Hoa Sen"
+  },
+  "13": {
+    "id": "HSE2",
+    "species": "hoasen",
+    "name": "Hoa Sen",
+    "imgdir": "assets/nhhoa/HSE2-HoaSen2/",
+    "price": "199.000 VNĐ/Chậu",
+    "description": "Hoa Sen"
+  },
+  "14": {
+    "id": "HSE3",
+    "species": "hoasen",
+    "name": "Hoa Sen",
+    "imgdir": "assets/nhhoa/HSE3-HoaSen3/",
+    "price": "199.000 VNĐ/Chậu",
+    "description": "Hoa Sen"
+  },
+  "15": {
+    "id": "HMAI1",
+    "species": "hoamai",
+    "name": "Hoa Mai Bonsai",
+    "imgdir": "assets/nhhoa/HMAI1-HoaMai/",
+    "price": "239.000 VNĐ/Chậu",
+    "description": "Hoa Mai Bonsai"
+  },
+  "16": {
+    "id": "HMAI2",
+    "species": "hoamai",
+    "name": "Hoa Mai",
+    "imgdir": "assets/nhhoa/HMAI2-HoaMai/",
+    "price": "349.000 VNĐ/Bình",
+    "description": "Hoa Mai"
+  },
+  "17": {
+    "id": "HLK1",
+    "species": "hoamai",
+    "name": "Hoa Loa Kèn",
+    "imgdir": "assets/nhhoa/HLK1-HoaLoaKen/",
+    "price": "199.000 VNĐ/Bình",
+    "description": "Hoa Loa Kèn"
+  }
+}

@@ -1,0 +1,14 @@
+.grid {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1200px;
+    background-color: #fff;
+}
+
+
+figure {
+    height: 18rem;
+    overflow: hidden;
+}
