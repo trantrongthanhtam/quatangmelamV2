@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import products from '../../assets/nhhoa/products.json';
+import {CartService} from '../cart.service';
+import { Store } from '@ngrx/store';
+import {AddToCart} from '../actions/cart.actions';
 
 @Component({
   selector: 'app-catalogpage',
@@ -8,7 +11,17 @@ import products from '../../assets/nhhoa/products.json';
 })
 export class CatalogpageComponent implements OnInit {
   public products = [];
-  constructor() {}
+
+  constructor(private store:Store) {
+
+  }
+  logout(product){
+    console.log(product);
+  }
+  
+  addToCart(product) {
+    this.store.dispatch(new AddToCart(product))
+  }
 
   ngOnInit() {
     let temp = Object.values(products);

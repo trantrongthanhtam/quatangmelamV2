@@ -1,0 +1,10 @@
+.separator {
+    width:100%;
+    border-bottom: grey solid 1px;
+    display:flex;
+    justify-content: center;
+    
+}
+p{
+    font-weight: bold;
+}

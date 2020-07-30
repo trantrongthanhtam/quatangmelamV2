@@ -1,0 +1,41 @@
+<div
+  class="checkoutwrapper d-flex flex-column align-items-center"
+  *ngIf="checkoutitems != []"
+>
+  <div class="header">
+    <div class="a">Sản phẩm</div>
+    <div class="price">Đơn giá</div>
+    <div class="c">Số lượng</div>
+    <div class="d">Tổng tính</div>
+  </div>
+  <div class="body " *ngFor="let item of checkoutitems">
+    <figure class="a">
+      <img
+        [src]="item.src + item.id + '-1.jpg'"
+        class="card-img-top pr-2"
+        width="50px"
+        height="auto"
+        alt="..."
+      /><h5 class="b mt-0">{{ item.name }}</h5><p class="b-price card-text">
+        {{ item.price }}
+      </p>
+    </figure>
+
+    
+    <p class="price card-text">
+      {{ item.price }}
+    </p>
+
+    <p class="d card-text d-flex justify-content-around align-items-center p-2">
+      <button class="increase" (click)="upQuantity(item)"></button>
+      {{ item.quantity
+      }}<button class="decrease" (click)="downQuantity(item)"></button>
+    </p>
+
+    <p class="e card-text">
+      {{ item.pricenumber * item.quantity | currency: "VND" }}
+    </p>
+    <span class="delete" (click)='removeProduct(item)'><img src="assets/styling-vector/close-delete.svg" alt=""></span>
+  </div>
+  <div class="sum">Tổng tính: {{sum| currency: "VND" }}</div>
+</div>

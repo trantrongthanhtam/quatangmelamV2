@@ -1,13 +1,13 @@
 <div class="wrapper sticky-top">
-  <nav class="navbar navbar-expand-md navbar-light  ml-auto mr-auto pt-0 pr-0">
+  <nav class="navbar navbar-expand-md navbar-light  ml-auto mr-auto pt-0 ">
     <a class="navbar-brand p-0 pt-2" href="#"><figure><img src="assets/Logo-transparent.png" width="110px" height="auto" id="bigscreenlogo" alt="Qua Tang Me Lam Logo"><img src="assets/Logo-transparent-noname.png" width="65px" height="auto" id="smallscreenlogo" alt="Qua Tang Me Lam Logo"></figure> </a>
     <span class="brandname">Quà Tặng Mẹ Làm</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse align-self-baseline justify-content-end menuwrapper" id="navbarSupportedContent">
-      <ul class="navbar-nav d-flex justify-content-around menu mr-3">
+    <div class="collapse navbar-collapse align-self-baseline justify-content-end " id="navbarSupportedContent">
+      <ul class="navbar-nav d-flex justify-content-around menu mr-3 mt-2">
         <li class="nav-item active">
           <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active" data-toggle="collapse" data-target=".navbar-collapse.show">Trang chủ<span class="sr-only">(current)</span></a>
         </li>
@@ -15,18 +15,22 @@
           <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Giới thiệu</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"[routerLink]="['/catalog']" routerLinkActive="router-link-active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" [routerLink]="['/catalog']" routerLinkActive="router-link-active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sản phẩm
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Bộ sưu tập Hoa Lan</a>
             <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Bộ sưu tập Hoa Hồng</a>
             <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Bộ sưu tập Hoa Sen</a>
             <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Các loại hoa khác</a>
-          </div>
+          </div> -->
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Liên hệ</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" [routerLink]="['/checkout']" routerLinkActive="router-link-active" data-target=".navbar-collapse.show" class="d-flex " href="#"><img src="assets/icons/cartIcon.png" width="20px" height="20px"/><div class="showcart" >{{thecart}}</div> 	&nbsp;&nbsp; Giỏ hàng</a>
         </li>
       </ul>
     </div>

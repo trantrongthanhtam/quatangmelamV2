@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CatalogpageComponent } from './catalogpage/catalogpage.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { StoreModule} from '@ngrx/store';
+import cartReducer from './reducers/cart.reducer';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
    declarations: [
@@ -13,10 +18,14 @@ import { CatalogpageComponent } from './catalogpage/catalogpage.component';
       NavbarComponent,
       HomepageComponent,
       CatalogpageComponent,
+      FooterComponent,
+      CheckoutComponent
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      StoreModule.forRoot({cart: cartReducer}),
+
    ],
    providers: [],
    bootstrap: [
