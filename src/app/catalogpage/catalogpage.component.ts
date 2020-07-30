@@ -11,7 +11,7 @@ import {AddToCart} from '../actions/cart.actions';
 })
 export class CatalogpageComponent implements OnInit {
   public products = [];
-
+  private allproducts=[];
   constructor(private store:Store) {
 
   }
@@ -23,10 +23,19 @@ export class CatalogpageComponent implements OnInit {
     this.store.dispatch(new AddToCart(product))
   }
 
+  onfilterchange(value){
+    if (value === "all") {
+      this.products = this.allproducts;
+    } else {
+      this.products = this.allproducts.filter(item => item[1]==value)
+    }
+  }
+
   ngOnInit() {
     let temp = Object.values(products);
     for (let product of temp) {
-      this.products.push(Object.values(product));
+      this.allproducts.push(Object.values(product));
+      this.products = this.allproducts;
     }
   }
 }

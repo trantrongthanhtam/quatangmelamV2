@@ -49,6 +49,16 @@
     "description": "Cỏ May Mắn",
     "newarrival" : "no"
   },
+  "18": {
+    "id": "H2L1",
+    "species": "hoakhac",
+    "name": "Hoa Tulip",
+    "imgdir": "assets/nhhoa/H2L1-HoaTulip/",
+    "price": "79.000 VNĐ/Chậu",
+    "pricenumber": "79000",
+    "description": "Hoa Tulip",
+    "newarrival" : "no"
+  },
   "6": {
     "id": "HLA1",
     "species": "hoalan",
@@ -141,7 +151,7 @@
   },
   "15": {
     "id": "HMAI1",
-    "species": "hoamai",
+    "species": "hoakhac",
     "name": "Hoa Mai Bonsai",
     "imgdir": "assets/nhhoa/HMAI1-HoaMai/",
     "price": "239.000 VNĐ/Chậu",
@@ -151,7 +161,7 @@
   },
   "16": {
     "id": "HMAI2",
-    "species": "hoamai",
+    "species": "hoakhac",
     "name": "Hoa Mai",
     "imgdir": "assets/nhhoa/HMAI2-HoaMai/",
     "price": "349.000 VNĐ/Bình",
@@ -161,7 +171,7 @@
   },
   "17": {
     "id": "HLK1",
-    "species": "hoamai",
+    "species": "hoakhac",
     "name": "Hoa Loa Kèn",
     "imgdir": "assets/nhhoa/HLK1-HoaLoaKen/",
     "price": "199.000 VNĐ/Bình",

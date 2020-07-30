@@ -1,3 +1,23 @@
+.callforaction {
+    display: flex;
+    max-width: 1400px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.callforaction > figure {
+    height: 80vh;
+    padding-top: 30px;
+}
+.message {
+    width:30vw;
+    text-align: justify;
+
+}
+.message>h2 {
+    padding: 2rem;
+}
 
 .collection {
     max-width: 1200px;
@@ -14,6 +34,7 @@
     flex-direction: row;
     max-width: 1200px;
 }
+
 
 .grid>h1,.collection >h1 {
     width: 100%;
