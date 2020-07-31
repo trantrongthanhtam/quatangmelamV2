@@ -11,13 +11,12 @@ import {AddToCart} from '../actions/cart.actions';
 })
 export class CatalogpageComponent implements OnInit {
   public products = [];
+  public minPrice:number = 0; maxPrice:number = 1000;
   private allproducts=[];
   constructor(private store:Store) {
 
   }
-  logout(product){
-    console.log(product);
-  }
+
   
   addToCart(product) {
     this.store.dispatch(new AddToCart(product))
@@ -27,15 +26,22 @@ export class CatalogpageComponent implements OnInit {
     if (value === "all") {
       this.products = this.allproducts;
     } else {
-      this.products = this.allproducts.filter(item => item[1]==value)
+      this.products = this.allproducts.filter(item => item.species ==value)
     }
   }
 
+  onMinPriceChange(value) {
+    this.minPrice = value;
+  }
+
+  onMaxPriceChange(value) {
+    if (value < this.minPrice) {
+      this.maxPrice = this.minPrice;
+    } else this.maxPrice = value;
+  }
+
   ngOnInit() {
-    let temp = Object.values(products);
-    for (let product of temp) {
-      this.allproducts.push(Object.values(product));
-      this.products = this.allproducts;
-    }
+    this.allproducts = Object.values(products);
+    this.products = this.allproducts;
   }
 }

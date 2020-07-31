@@ -1,0 +1,53 @@
+<div class="productwrapper">
+  <section class="imgcontainer">
+    <figure>
+      <div class="aspect-ratio"><img [src]="product[0].imgdir + '/' + product[0].id + '-'+imgNo+'.jpg'" alt="Product Image" width="100%" height="auto"></div>
+    </figure>
+    <div class="imgshow">
+      <figure  >
+        <img [attr.data-imgNo]='1' (click)='onImgChange($event.target)' [src]="product[0].imgdir + '/' + product[0].id + '-1.jpg'" alt="Product Image" width="100%" height="auto">
+      </figure>
+      <figure  >
+        <img [attr.data-imgNo]='2' (click)='onImgChange($event.target)' [src]="product[0].imgdir + '/' + product[0].id + '-2.jpg'" alt="Product Image" width="100%" height="auto">
+      </figure>
+      <figure  >
+        <img [attr.data-imgNo]='3' (click)='onImgChange($event.target)' [src]="product[0].imgdir + '/' + product[0].id + '-3.jpg'" alt="Product Image" width="100%" height="auto">
+      </figure>
+    </div>
+  </section>
+  <section class="productdescription">
+    <h2>{{product[0].name}}</h2>
+    <p>Giá: {{product[0].price}}</p>
+    <p>Mô tả: {{product[0].description}}</p>
+    <button href="#" class="btn btn-primary" (click)="addToCart(product);$event.stopPropagation()">
+      Mua sản phẩm
+    </button>
+  </section>
+  <section class="grid ml-auto mr-auto">
+    <h1>
+      Sản phẩm nổi bật
+    </h1>
+    <div *ngFor="let product of products;">
+      <div class="" *ngIf="product.newarrival == 'yes'">
+        <div class="card m-3" style="width: 18rem;">
+          <figure>
+            <img
+              [src]="product.imgdir + '/' + product.id + '-1.jpg'"
+              class="card-img-top"
+              alt="..."
+            />
+          </figure>
+          <div class="card-body text-center pt-0">
+            <h5 class="card-title mt-0">{{ product.name }}</h5>
+            <p class="card-text">
+              {{ product.price }}
+            </p>
+            <button href="#" class="btn btn-primary" (click)="addToCart2(product)">
+              Mua sản phẩm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

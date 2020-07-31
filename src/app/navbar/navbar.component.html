@@ -1,6 +1,6 @@
 <div class="wrapper sticky-top">
   <nav class="navbar navbar-expand-md navbar-light  ml-auto mr-auto pt-0 ">
-    <a class="navbar-brand p-0 pt-2" href="#"><figure><img src="assets/Logo-transparent.png" width="110px" height="auto" id="bigscreenlogo" alt="Qua Tang Me Lam Logo"><img src="assets/Logo-transparent-noname.png" width="65px" height="auto" id="smallscreenlogo" alt="Qua Tang Me Lam Logo"></figure> </a>
+    <a class="navbar-brand p-0 pt-2" [routerLink]="['/home']" routerLinkActive="router-link-active" ><figure><img src="assets/Logo-transparent.png" width="110px" height="auto" id="bigscreenlogo" alt="Qua Tang Me Lam Logo"><img src="assets/Logo-transparent-noname.png" width="65px" height="auto" id="smallscreenlogo" alt="Qua Tang Me Lam Logo"></figure> </a>
     <span class="brandname">Quà Tặng Mẹ Làm</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@
           <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Giới thiệu</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" [routerLink]="['/catalog']" routerLinkActive="router-link-active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" [routerLink]="['/products']" routerLinkActive="router-link-active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sản phẩm
           </a>
           <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">

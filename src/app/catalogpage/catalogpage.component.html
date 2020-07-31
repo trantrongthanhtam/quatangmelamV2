@@ -9,7 +9,7 @@
         id="Radio1"
         value="all"
         checked
-        (change)='onfilterchange($event.target.value)'
+        (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio1">
         Tất cả sản phẩm
@@ -23,7 +23,7 @@
         name="Radio"
         id="Radio2"
         value="hoalan"
-        (change)='onfilterchange($event.target.value)'
+        (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio2">
         Bộ Sưu Tập Hoa Lan
@@ -37,7 +37,7 @@
         name="Radio"
         id="Radio3"
         value="hoahong"
-        (change)='onfilterchange($event.target.value)'
+        (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio3">
         Bộ Sưu Tập Hoa Hồng
@@ -51,7 +51,7 @@
         name="Radio"
         id="Radio4"
         value="hoasen"
-        (change)='onfilterchange($event.target.value)'
+        (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio4">
         Bộ Sưu Tập Hoa Sen
@@ -65,42 +65,34 @@
         name="Radio"
         id="Radio5"
         value="hoadai"
-        (change)='onfilterchange($event.target.value)'
+        (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio5">
         Bộ Sưu Tập Hoa Dại
       </label>
     </div>
-    <form method="post" action="/action_page_post.php">
-      <div data-role="rangeslider">
-        <label for="price-min">Price:</label>
-        <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-        <label for="price-max">Price:</label>
-        <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
-      </div>
-        <input type="submit" data-inline="true" value="Submit">
-        <p>The range slider can be useful for allowing users to select a specific price range when browsing products.</p>
-      </form>
+
+    
   </div>
   <div class="grid ml-auto mr-auto">
     <h1>
       Các sản phẩm
     </h1>
     <div *ngFor="let product of products; index as i">
-      <div class="card m-3" style="width: 18rem;">
+      <div class="card m-3" style="width: 18rem;" [routerLink]="['/products',product.id]" routerLinkActive="router-link-active" >
         <figure>
           <img
-            [src]="product[3] + '/' + product[0] + '-1.jpg'"
+            [src]="product.imgdir + '/' + product.id + '-1.jpg'"
             class="card-img-top"
             alt="..."
           />
         </figure>
         <div class="card-body text-center pt-0">
-          <h5 class="card-title mt-0">{{ product[2] }}</h5>
+          <h5 class="card-title mt-0">{{ product.name }}</h5>
           <p class="card-text">
-            {{ product[4] }}
+            {{ product.price }}
           </p>
-          <button href="#" class="btn btn-primary" (click)="addToCart(product)">
+          <button href="#" class="btn btn-primary" (click)="addToCart(product);$event.stopPropagation()">
             Mua sản phẩm
           </button>
         </div>

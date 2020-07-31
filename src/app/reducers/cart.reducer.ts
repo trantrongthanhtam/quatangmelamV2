@@ -25,13 +25,13 @@ export default function cartReducer(state = initialState, action: ActionsUnion) 
 		case ActionTypes.Add:
 
 			const foundItem = cartProducts.find(
-				item =>	item.id === action.payload[0]
+				item =>	item.id === action.payload.id
 			);
 			if (foundItem) {
 				// item has been added before
 				updatedCart = cartProducts.map(item => {
 					if (
-						item.id === action.payload[0] 
+						item.id === action.payload.id 
 					) {
 						return {
 							...item,
@@ -44,11 +44,11 @@ export default function cartReducer(state = initialState, action: ActionsUnion) 
 				updatedCart = [
 					...cartProducts,
 					{
-						id: action.payload[0],
-						src: action.payload[3],
-						price: action.payload[4],
-                        pricenumber: +action.payload[5],
-                        name: action.payload[2],
+						id: action.payload.id,
+						imgdir: action.payload.imgdir,
+						price: action.payload.price,
+                        pricenumber: +action.payload.pricenumber,
+                        name: action.payload.name,
 						quantity: 1
 					}
 				];

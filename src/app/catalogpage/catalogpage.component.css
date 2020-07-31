@@ -27,3 +27,6 @@ figure {
     height: 18rem;
     overflow: hidden;
 }
+.card {
+    cursor: pointer;
+}

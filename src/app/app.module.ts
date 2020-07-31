@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { StoreModule} from '@ngrx/store';
 import cartReducer from './reducers/cart.reducer';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ProductdetailpageComponent } from './productdetailpage/productdetailpage.component';
 
 @NgModule({
    declarations: [
@@ -19,14 +20,14 @@ import { CheckoutComponent } from './checkout/checkout.component';
       HomepageComponent,
       CatalogpageComponent,
       FooterComponent,
-      CheckoutComponent
+      CheckoutComponent,
+      ProductdetailpageComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      StoreModule.forRoot({cart: cartReducer}),
-
-   ],
+      StoreModule.forRoot({cart:cartReducer})]
+,
    providers: [],
    bootstrap: [
       AppComponent

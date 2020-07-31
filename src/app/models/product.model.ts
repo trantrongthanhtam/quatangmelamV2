@@ -3,5 +3,5 @@ export interface Product {
   id:string;
   price:string;
   pricenumber:number;
-  src:string;
+  imgdir:string;
 }
