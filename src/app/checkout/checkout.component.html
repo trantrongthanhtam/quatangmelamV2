@@ -8,7 +8,7 @@
     <div class="c">Số lượng</div>
     <div class="d">Tổng tính</div>
   </div>
-  <div class="body " *ngFor="let item of checkoutitems">
+  <div class="body" *ngFor="let item of checkoutitems">
     <figure class="a">
       <img
         [src]="item.imgdir + item.id + '-1.jpg'"
@@ -16,12 +16,13 @@
         width="50px"
         height="auto"
         alt="..."
-      /><h5 class="b mt-0">{{ item.name }}</h5><p class="b-price card-text">
+      />
+      <h5 class="b mt-0">{{ item.name }}</h5>
+      <p class="b-price card-text">
         {{ item.price }}
       </p>
     </figure>
 
-    
     <p class="price card-text">
       {{ item.price }}
     </p>
@@ -35,7 +36,63 @@
     <p class="e card-text">
       {{ item.pricenumber * item.quantity | currency: "VND" }}
     </p>
-    <span class="delete" (click)='removeProduct(item)'><img src="assets/styling-vector/close-delete.svg" alt=""></span>
+    <span class="delete" (click)="removeProduct(item)"
+      ><img src="assets/styling-vector/close-delete.svg" alt=""
+    /></span>
   </div>
-  <div class="sum">Tổng tính: {{sum| currency: "VND" }}</div>
+  <div class="sum">Tổng tính: {{ sum | currency: "VND" }}</div>
+  <form [formGroup]='customerForm' (ngSubmit)='onSubmit()'>
+    <div class="form-group">
+      <label for="inputPassword4">Họ và Tên</label>
+      <input
+        type="name"
+        class="form-control"
+        id="inputPassword4"
+        placeholder="Họ và Tên"
+        formControlName="name"
+      />
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="Email"
+          formControlName="email"
+        />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPhone">Số Điện thoại</label>
+        <input
+          type="number"
+          class="form-control"
+          id="inputPhone"
+          placeholder="Số điện thoại"
+          formControlName="phone"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputAddress"
+        placeholder="Địa chỉ giao hàng"
+        formControlName="address"
+      />
+    </div>
+  
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="checked"/>
+        <label class="form-check-label" for="gridCheck">
+          Nhận hóa đơn điện tử
+        </label>
+      </div>
+    </div>
+    <button type="submit"  class="btn btn-primary">Đặt đơn hàng</button>
+  </form>
 </div>

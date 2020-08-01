@@ -1,6 +1,7 @@
 .callforaction {
     display: flex;
     max-width: 1400px;
+
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -8,7 +9,9 @@
 }
 .callforaction > figure {
     height: 80vh;
+    width: 50%;
     padding-top: 30px;
+    overflow: visible;
 }
 .message {
     width:30vw;
@@ -25,7 +28,15 @@
 }
 .card {
     margin: 1rem;
+    overflow: hidden;
+    width: 16rem;
+    cursor: pointer;
 }
+.cardcontainer {
+    width: 16rem;
+    margin: 1.2rem;
+}
+
 
 .grid {
     justify-content: center;
@@ -45,4 +56,33 @@
 figure {
     height: 18rem;
     overflow: hidden;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 990px) {
+    .message>h2 {
+        font-size: 1.5rem;
+    }
+    .callforaction > figure {
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .message>h2 {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .callforaction > figure{
+        width: 80vw;
+        height: auto;
+    }
+    .message {
+        width: 70vw;
+    }
+    .callforaction{
+      flex-direction: column;
+    }
 }

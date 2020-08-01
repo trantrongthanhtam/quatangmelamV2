@@ -30,3 +30,21 @@ figure {
 .card {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 990px) {
+    .catalogwrapper{
+        flex-direction: column;
+    }
+    .filterwrapper{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .filterwrapper>h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .filterwrapper >.form-check {
+        margin: 0rem 1rem;
+    }
+}

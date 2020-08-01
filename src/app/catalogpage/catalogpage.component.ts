@@ -3,6 +3,7 @@ import products from '../../assets/nhhoa/products.json';
 import {CartService} from '../cart.service';
 import { Store } from '@ngrx/store';
 import {AddToCart} from '../actions/cart.actions';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-catalogpage',
@@ -13,7 +14,10 @@ export class CatalogpageComponent implements OnInit {
   public products = [];
   public minPrice:number = 0; maxPrice:number = 1000;
   private allproducts=[];
-  constructor(private store:Store) {
+  private queryfilter;
+  public checkedradio=[['all',true],['hoalan',false],['hoahong',false],['hoasen',false],['hoadai',false]];
+
+  constructor(private store:Store, private route: ActivatedRoute) {
 
   }
 
@@ -30,18 +34,18 @@ export class CatalogpageComponent implements OnInit {
     }
   }
 
-  onMinPriceChange(value) {
-    this.minPrice = value;
-  }
-
-  onMaxPriceChange(value) {
-    if (value < this.minPrice) {
-      this.maxPrice = this.minPrice;
-    } else this.maxPrice = value;
-  }
-
   ngOnInit() {
     this.allproducts = Object.values(products);
-    this.products = this.allproducts;
+    this.route.queryParams.subscribe(params=> this.queryfilter = params['filter']);
+    if (this.queryfilter === "all" || !this.queryfilter) {
+      this.products = this.allproducts;
+    } else {
+      this.products = this.allproducts.filter(item => item.species ==this.queryfilter)
+      this.checkedradio.forEach(element => {
+        if (element[0]===this.queryfilter){
+          element[1] = true;
+        } else element[1]=false;
+      });
+    }
   }
 }

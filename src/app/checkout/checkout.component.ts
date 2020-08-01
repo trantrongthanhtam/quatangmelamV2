@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { cartState } from '../reducers/cart.reducer';
 import {UpQuantity, DownQuantity, RemoveFromCart} from '../actions/cart.actions';
+import {FormGroup, FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-checkout',
@@ -12,6 +13,18 @@ export class CheckoutComponent implements OnInit {
   public checkoutitems;
   public sum;
   private oldcheckout;
+  public customerForm = new FormGroup({
+    name : new FormControl('',Validators.required),
+    email : new FormControl('',Validators.required),
+    phone : new FormControl('',Validators.required),
+    address : new FormControl('',Validators.required),
+    checked : new FormControl(''),
+    
+  })
+
+  onSubmit(){
+    console.log(this.customerForm.errors);
+  }
   constructor(private store:Store<{cart:cartState}> ) { 
   }
   removeProduct(item){
@@ -37,3 +50,4 @@ export class CheckoutComponent implements OnInit {
   }
 
 }
+

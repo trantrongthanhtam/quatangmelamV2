@@ -1,4 +1,4 @@
-<div class="catalogwrapper d-flex flex-row">
+<div class="catalogwrapper d-flex">
   <div class="filterwrapper">
     <h3>Bộ lọc sản phẩm:</h3>
     <div class="form-check">
@@ -8,7 +8,7 @@
         name="Radio"
         id="Radio1"
         value="all"
-        checked
+        [checked]='checkedradio[0][1]'
         (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio1">
@@ -23,6 +23,7 @@
         name="Radio"
         id="Radio2"
         value="hoalan"
+        [checked]='checkedradio[1][1]'
         (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio2">
@@ -37,6 +38,7 @@
         name="Radio"
         id="Radio3"
         value="hoahong"
+        [checked]='checkedradio[2][1]'
         (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio3">
@@ -51,6 +53,7 @@
         name="Radio"
         id="Radio4"
         value="hoasen"
+        [checked]='checkedradio[3][1]'
         (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio4">
@@ -65,6 +68,7 @@
         name="Radio"
         id="Radio5"
         value="hoadai"
+        [checked]='checkedradio[4][1]'
         (change)="onfilterchange($event.target.value)"
       />
       <label class="form-check-label" for="Radio5">

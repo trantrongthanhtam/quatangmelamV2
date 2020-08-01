@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: wrap;
     max-width: 1200px;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -38,4 +38,32 @@
     text-align: center;
     width: 50%;
     place-items: top center;
+}
+
+.grid {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1200px;
+}
+.grid>h1,.collection >h1 {
+    width: 100%;
+    text-align: center;
+
+}
+
+figure {
+    height: 18rem;
+    overflow: hidden;
+}
+
+.cardcontainer {
+    width: 16rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.card {
+    margin: 0;
 }
