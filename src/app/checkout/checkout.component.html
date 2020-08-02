@@ -41,7 +41,7 @@
     /></span>
   </div>
   <div class="sum">Tổng tính: {{ sum | currency: "VND" }}</div>
-  <form [formGroup]='customerForm' (ngSubmit)='onSubmit()'>
+  <form [formGroup]='customerForm' (ngSubmit)='onSubmit(customerForm.value)'>
     <div class="form-group">
       <label for="inputPassword4">Họ và Tên</label>
       <input
@@ -49,7 +49,7 @@
         class="form-control"
         id="inputPassword4"
         placeholder="Họ và Tên"
-        formControlName="name"
+        formControlName="name" NgModel
       />
     </div>
     <div class="form-row">
@@ -60,7 +60,7 @@
           class="form-control"
           id="inputEmail4"
           placeholder="Email"
-          formControlName="email"
+          formControlName="email" NgModel
         />
       </div>
       <div class="form-group col-md-6">
@@ -70,7 +70,7 @@
           class="form-control"
           id="inputPhone"
           placeholder="Số điện thoại"
-          formControlName="phone"
+          formControlName="phone" NgModel
         />
       </div>
     </div>
@@ -81,18 +81,18 @@
         class="form-control"
         id="inputAddress"
         placeholder="Địa chỉ giao hàng"
-        formControlName="address"
+        formControlName="address" NgModel
       />
     </div>
   
     <div class="form-group">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="checked"/>
-        <label class="form-check-label" for="gridCheck">
+        <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="checked" NgModel/>
+        <label class="form-check-label" for="gridCheck" >
           Nhận hóa đơn điện tử
         </label>
       </div>
     </div>
-    <button type="submit"  class="btn btn-primary">Đặt đơn hàng</button>
+    <div class="d-flex buttonwrapper"><button type="submit"  class="btn btn-primary">Đặt đơn hàng</button></div>
   </form>
 </div>

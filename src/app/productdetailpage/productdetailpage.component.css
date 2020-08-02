@@ -41,7 +41,7 @@
 }
 
 .grid {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -57,6 +57,9 @@ figure {
     height: 18rem;
     overflow: hidden;
 }
+.imgshow figure {
+    height: auto;
+}
 
 .cardcontainer {
     width: 16rem;
@@ -66,4 +69,35 @@ figure {
 
 .card {
     margin: 0;
+}
+
+@media only screen and (max-width: 660px) {
+    .imgcontainer {
+        width: 100%;
+    }
+    .productdescription {
+        width: 100%;
+    }
+    .cardcontainer {
+        margin: 1rem;
+        width: auto;
+
+    }
+    .cardcontainer .card {
+        width: 10rem;
+    }
+    .cardcontainer figure {
+        height: 12rem;
+    }
+    .cardcontainer .card-body {
+        font-size: smaller;
+        padding: 0.8rem;
+    }
+    .cardcontainer h5 {
+        font-size: large;
+        font-weight: bold;
+    }
+    .cardcontainer button {
+        padding: 0.4rem;
+    }
 }

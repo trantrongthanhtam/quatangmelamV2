@@ -12,27 +12,29 @@
           <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active" data-toggle="collapse" data-target=".navbar-collapse.show">Trang chủ<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Giới thiệu</a>
+          <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" >Giới thiệu</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" [routerLink]="['/products']" routerLinkActive="router-link-active"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sản phẩm
           </a>
           <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Bộ sưu tập Hoa Lan</a>
-            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Bộ sưu tập Hoa Hồng</a>
-            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Bộ sưu tập Hoa Sen</a>
-            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Các loại hoa khác</a>
+            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" >Bộ sưu tập Hoa Lan</a>
+            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" >Bộ sưu tập Hoa Hồng</a>
+            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" >Bộ sưu tập Hoa Sen</a>
+            <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" >Các loại hoa khác</a>
           </div> -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Liên hệ</a>
+          <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" >Liên hệ</a>
         </li>
-        <div class="dropdown-divider"></div>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" [routerLink]="['/checkout']" routerLinkActive="router-link-active" data-target=".navbar-collapse.show" class="d-flex " href="#"><img src="assets/icons/cartIcon.png" width="20px" height="20px"/><div class="showcart" >{{thecart}}</div> 	&nbsp;&nbsp; Giỏ hàng</a>
+        <li class="nav-item checkout">
+          <a class="nav-link" [routerLink]="['/checkout']" routerLinkActive="router-link-active"  class="d-flex " ><img src="assets/icons/cartIcon.png" width="20px" height="20px"/><div class="showcart" >{{thecart}}</div> 	&nbsp;&nbsp; <span>Giỏ hàng</span></a>
         </li>
       </ul>
     </div>
   </nav>
+  <div class="float-checkout">
+    <a class="" [routerLink]="['/checkout']" routerLinkActive="router-link-active"  class="d-flex ml-auto mr-auto mt-auto mb-2" ><img src="assets/icons/cartIcon.png" width="20px" height="20px"/><div class="showcart" >{{thecart}}</div> 	&nbsp;&nbsp; <span>Giỏ hàng</span></a>
+  </div>
 </div>

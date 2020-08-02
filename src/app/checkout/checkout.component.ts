@@ -14,16 +14,16 @@ export class CheckoutComponent implements OnInit {
   public sum;
   private oldcheckout;
   public customerForm = new FormGroup({
-    name : new FormControl('',Validators.required),
-    email : new FormControl('',Validators.required),
-    phone : new FormControl('',Validators.required),
-    address : new FormControl('',Validators.required),
+    name : new FormControl(''),
+    email : new FormControl(''),
+    phone : new FormControl(''),
+    address : new FormControl(''),
     checked : new FormControl(''),
     
   })
 
-  onSubmit(){
-    console.log(this.customerForm.errors);
+  onSubmit(value){
+    console.log(value);
   }
   constructor(private store:Store<{cart:cartState}> ) { 
   }

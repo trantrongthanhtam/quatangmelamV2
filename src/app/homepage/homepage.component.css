@@ -26,6 +26,9 @@
     max-width: 1200px;
 
 }
+.collection > .card {
+    width: 18rem;
+}
 .card {
     margin: 1rem;
     overflow: hidden;
@@ -33,7 +36,6 @@
     cursor: pointer;
 }
 .cardcontainer {
-    width: 16rem;
     margin: 1.2rem;
 }
 
@@ -84,5 +86,36 @@ h5 {
     }
     .callforaction{
       flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .collection > .card {
+        width: 10rem;
+    }
+    .collection .card-body {
+        padding: 1rem;
+    }
+    .collection h5 {
+        font-size: unset;
+        }
+    .cardcontainer {
+        margin: 0;
+    }
+    .cardcontainer .card {
+        width: 10rem;
+    }
+    .cardcontainer figure {
+        height: 12rem;
+    }
+    .cardcontainer .card-body {
+        font-size: smaller;
+        padding: 0.8rem;
+    }
+    .cardcontainer h5 {
+        font-size: large;
+    }
+    .cardcontainer button {
+        padding: 0.4rem;
     }
 }

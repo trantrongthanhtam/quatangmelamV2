@@ -1,6 +1,6 @@
 .wrapper {
     width:100%;
-    background-color:#ebe2ca;
+    background-color:#f2f2f2;
 }
 .showcart {
     position: absolute;
@@ -23,6 +23,12 @@ nav {
     background-repeat: no-repeat;
     background-position: top right;
     
+}
+.checkout {
+    padding-left: 1.5rem;
+}
+.float-checkout{
+    display: none;
 }
 a{
     color:rgb(0, 0, 0) !important;
@@ -108,5 +114,35 @@ ul li:last-child{
 
     ul li:last-child{
         margin-left: 0px;
+    }
+    .checkout {
+        display: none;
+    }
+    .float-checkout {
+        position: fixed;
+        display: flex;
+        place-items: center;
+        top: 70px;
+        right: 10px;
+        background-color: lightblue;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        animation: checkoutfloating 1.5s   infinite;
+        transition: ease-in-out;
+    }
+    .float-checkout span{
+        display: none;
+    }
+    .float-checkout .showcart {
+        bottom: 25px;
+    }
+    .float-checkout >a {
+        padding: 0;
+    }
+    @keyframes checkoutfloating {
+        0%{top:70px}
+        50%{top:80px}
+        100%{top:70px}
     }
   }

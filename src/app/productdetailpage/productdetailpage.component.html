@@ -55,14 +55,13 @@
       Mua sản phẩm
     </button>
   </section>
-  <section class="grid ml-auto mr-auto">
+  <section class="grid ml-auto mr-auto mt-3">
     <h1>
       Sản phẩm nổi bật
     </h1>
     <div class="cardcontainer" *ngFor="let product of randompickproducts">
       <div
         class="card"
-        style="width: 16rem;"
         [routerLink]="['/products', product.id]"
         routerLinkActive="router-link-active"
       >
