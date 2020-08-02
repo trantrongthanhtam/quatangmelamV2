@@ -38,14 +38,12 @@
 .cardcontainer {
     margin: 1.2rem;
 }
-
-
 .grid {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 

@@ -77,6 +77,7 @@ form{
     figure {
         flex-direction: column;
         padding-left: 0;
+        height: 110px;
     }
 }
 
@@ -90,5 +91,13 @@ form{
     }
     .header, .body {
         grid-template-columns: 42% 25% 23% 10%;
+    }
+    figure {
+        height: 100%;
+        padding: 0;
+        font-size: smaller;
+    }
+    figure h5 {
+        font-size: large;
     }
 }
