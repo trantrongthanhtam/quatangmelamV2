@@ -82,8 +82,8 @@
     <h1>
       Các sản phẩm
     </h1>
-    <div *ngFor="let product of products; index as i">
-      <div class="card m-3" style="width: 18rem;" [routerLink]="['/products',product.id]" routerLinkActive="router-link-active" >
+    <div data-aos="fade-up" data-aos-duration='1000' data-aos-once="true" *ngFor="let product of products; index as i">
+      <div class="card m-3" [routerLink]="['/products',product.id]" routerLinkActive="router-link-active" >
         <figure>
           <img
             [src]="product.imgdir + '/' + product.id + '-1.jpg'"

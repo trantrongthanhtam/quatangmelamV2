@@ -3,6 +3,7 @@ import products from '../../assets/nhhoa/products.json';
 import { AddToCart } from '../actions/cart.actions';
 import { Store } from '@ngrx/store';
 import { Router } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-homepage',
@@ -24,6 +25,7 @@ export class HomepageComponent implements OnInit {
 
 
   ngOnInit() {
+    AOS.init();
     this.products = Object.values(products);
     function containsObject(obj, list) {
       var i;

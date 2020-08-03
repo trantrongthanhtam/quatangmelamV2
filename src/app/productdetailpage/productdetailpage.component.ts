@@ -3,6 +3,7 @@ import products from '../../assets/nhhoa/products.json';
 import { ActivatedRoute } from '@angular/router';
 import {AddToCart} from '../actions/cart.actions';
 import { Store } from '@ngrx/store';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-productdetailpage',
@@ -33,6 +34,7 @@ export class ProductdetailpageComponent implements OnInit {
   }
 
   ngOnInit() {
+    AOS.init();
     this.products = Object.values(products);
     console.log(this.products);
     this.product = this.products.filter(product => product.id == this.route.snapshot.paramMap.get('id'))
@@ -59,7 +61,7 @@ export class ProductdetailpageComponent implements OnInit {
   }
   ngDoCheck() {
     if (this.route.snapshot.paramMap.get('id') !== this.oldID) {
-      this.product = this.products.filter(product => product.id == this.route.snapshot.paramMap.get('id'))
+      this.product = this.products.filter(product => product.id == this.route.snapshot.paramMap.get('id'));
     }
     this.oldID = this.route.snapshot.paramMap.get('id');
   }

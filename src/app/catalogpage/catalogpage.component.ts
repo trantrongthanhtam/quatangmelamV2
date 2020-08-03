@@ -4,6 +4,7 @@ import {CartService} from '../cart.service';
 import { Store } from '@ngrx/store';
 import {AddToCart} from '../actions/cart.actions';
 import { ActivatedRoute } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-catalogpage',
@@ -35,6 +36,7 @@ export class CatalogpageComponent implements OnInit {
   }
 
   ngOnInit() {
+    AOS.init();
     this.allproducts = Object.values(products);
     this.route.queryParams.subscribe(params=> this.queryfilter = params['filter']);
     if (this.queryfilter === "all" || !this.queryfilter) {

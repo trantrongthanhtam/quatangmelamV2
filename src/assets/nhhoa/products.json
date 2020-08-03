@@ -1,182 +1,277 @@
 {
   "1": {
+    "id": "H2L1",
+    "species": "hoakhac",
+    "name": "Hoa Tulip",
+    "imgdir": "assets/nhhoa/H2L1-HoaTulip/",
+    "numberofimg":"3",
+    "price": "149.000 VNĐ/Chậu",
+    "pricenumber": "149000",
+    "description": "Hoa Tulip bằng vải voan, một chậu gồm 4 cánh hoa đủ màu sắc (cam, xanh, hồng, vàng), tạo vẻ đẹp trang nhã nơi bày trí.",
+    "newarrival" : "no"
+  },
+  "2": {
+    "id": "HAT1",
+    "species": "hoakhac",
+    "name": "Hoa Anh Thảo",
+    "imgdir": "assets/nhhoa/HAT1-HoaAnhThao/",
+    "price": "119.000 VNĐ/Chậu",
+    "numberofimg":"3",
+    "pricenumber": "119000",
+    "description": "Hoa Anh Thảo với những cánh hoa tím nhung ma mị, cùng sắc xanh của những tán lá tạo nên sự kết hợp hài hòa, đẹp mắt.",
+    "newarrival" : "no"
+  },
+  "3": {
+    "id": "HCTC1",
+    "species": "hoakhac",
+    "name": "Cẩm Tú Cầu",
+    "imgdir": "assets/nhhoa/HCTC1-HoaCamTuCau/",
+    "numberofimg":"4",
+    "price": "119.000 VNĐ/Chậu",
+    "pricenumber": "119000",
+    "description": "Những cánh hoa cẩm tú cầu nhỏ nhắn đan xen nhau, cùng cánh bướm vàng xinh xắn tạo điểm nhấn nhất định sẽ là một chậu hoa bày trí đẹp ở bất kì đâu.",
+    "newarrival" : "no"
+  },
+  "4": {
+    "id": "HCTU1",
+    "species": "hoakhac",
+    "name": "Hoa Cát Tường",
+    "imgdir": "assets/nhhoa/HCTU1-HoaCatTuong/",
+    "numberofimg":"3",
+    "price": "40.000 VNĐ/Cành",
+    "pricenumber": "40000",
+    "description": "Một cành Cát Tường gồm 2 hoa lớn, 1 hoa hé mở và 2 nhụy hoa.",
+    "newarrival" : "no"
+  },
+  "5": {
     "id": "HDA1",
     "species": "hoadai",
     "name": "Hoa Cỏ Tím",
     "imgdir": "assets/nhhoa/HDA1-HoaDai/",
+    "numberofimg":"4",
     "price": "79.000 VNĐ/Chậu",
     "pricenumber": "79000",
-    "description": "Hoa cỏ tím",
-    "newarrival" : "yes"
+    "description": "Những cánh hoa cỏ tím nhỏ nhắn xinh xắn xen giữa những tán lá xanh sẽ là một chậu hoa nhỏ gọn đẹp mắt cho góc làm việc của bạn.",
+    "newarrival" : "no"
   },
-  "2": {
+  "6": {
     "id": "HDA2",
     "species": "hoadai",
     "name": "Sống Đời Đỏ",
     "imgdir": "assets/nhhoa/HDA2-HoaDai/",
+    "numberofimg":"3",
     "price": "79.000 VNĐ/Chậu",
     "pricenumber": "79000",
-    "description": "Sống Đời Đỏ",
-    "newarrival" : "yes"
+    "description": "Những cánh hoa sống đời đỏ rực sẽ là điểm nhấn đẹp cho góc làm việc hoặc trên bàn ăn gia đình, là một món quà nhỏ gọn nhưng cực kì đẹp mắt, ấn tượng.",
+    "newarrival" : "no"
   },
-  "3": {
+  "7": {
     "id": "HDA3",
     "species": "hoadai",
     "name": "Hoa Nhỏ Xanh",
     "imgdir": "assets/nhhoa/HDA3-HoaDai/",
+    "numberofimg":"3",
     "price": "79.000 VNĐ/Chậu",
     "pricenumber": "79000",
-    "description": "Hoa Nhỏ Xanh",
+    "description": "Chậu hoa bằng vải voan với những cánh hoa xanh tô điểm thêm những nhụy hoa búp xinh tạo cảm giác thư giãn, sảng khoái.",
     "newarrival" : "no"
   },
-  "4": {
+  "8": {
     "id": "HDA4",
     "species": "hoadai",
     "name": "Sống Đời Vàng",
     "imgdir": "assets/nhhoa/HDA4-HoaDai/",
+    "numberofimg":"2",
     "price": "79.000 VNĐ/Chậu",
     "pricenumber": "79000",
     "description": "Sống Đời Vàng",
     "newarrival" : "no"
   },
-  "5": {
+  "9": {
     "id": "HDA5",
     "species": "hoadai",
     "name": "Cỏ May Mắn",
     "imgdir": "assets/nhhoa/HDA5-HoaDai/",
+    "numberofimg":"3",
     "price": "79.000 VNĐ/Chậu",
     "pricenumber": "79000",
     "description": "Cỏ May Mắn",
     "newarrival" : "no"
   },
-  "18": {
-    "id": "H2L1",
+  "10": {
+    "id": "HDAO1",
     "species": "hoakhac",
-    "name": "Hoa Tulip",
-    "imgdir": "assets/nhhoa/H2L1-HoaTulip/",
-    "price": "79.000 VNĐ/Chậu",
-    "pricenumber": "79000",
-    "description": "Hoa Tulip",
-    "newarrival" : "no"
-  },
-  "6": {
-    "id": "HLA1",
-    "species": "hoalan",
-    "name": "Lan Tím",
-    "imgdir": "assets/nhhoa/HLA1-HoaLanTim/",
-    "price": "179.000 VNĐ/Chậu",
-    "pricenumber": "179000",
-    "description": "Lan Tím",
-    "newarrival" : "no"
-  },
-  "7": {
-    "id": "HLA2",
-    "species": "hoalan",
-    "name": "Lan Vàng Hồng",
-    "imgdir": "assets/nhhoa/HLA2-HoaLanVangHong/",
-    "price": "179.000 VNĐ/Chậu",
-    "pricenumber": "179000",
-    "description": "Lan Vàng Hồng",
-    "newarrival" : "no"
-  },
-  "8": {
-    "id": "HLA3",
-    "species": "hoalan",
-    "name": "Lan Nữ Hoàng",
-    "imgdir": "assets/nhhoa/HLA3-HoaLanNuHoang/",
+    "name": "Hoa Đào",
+    "imgdir": "assets/nhhoa/HDAO1-HoaDao/",
+    "numberofimg":"2",
     "price": "119.000 VNĐ/Chậu",
     "pricenumber": "119000",
-    "description": "Lan Nữ Hoàng",
+    "description": "Hoa Đào",
     "newarrival" : "no"
   },
-  "9": {
+  "11": {
+    "id": "HDAO2",
+    "species": "hoakhac",
+    "name": "Hoa Đào Bonsai",
+    "imgdir": "assets/nhhoa/HDAO2-HoaDaoBonsai/",
+    "numberofimg":"4",
+    "price": "149.000 VNĐ/Chậu",
+    "pricenumber": "149000",
+    "description": "Hoa Đào Bonsai",
+    "newarrival" : "yes"
+  },
+  "12": {
+    "id": "HDUOC1",
+    "species": "hoakhac",
+    "name": "Hoa Đuốc",
+    "imgdir": "assets/nhhoa/HDUOC1-HoaDuoc/",
+    "numberofimg":"2",
+    "price": "99.000 VNĐ/Chậu",
+    "pricenumber": "99000",
+    "description": "Hoa Đuốc",
+    "newarrival" : "no"
+  },
+  "13": {
+    "id": "HHM1",
+    "species": "hoakhac",
+    "name": "Hoa Hồng Môn",
+    "imgdir": "assets/nhhoa/HHM1-HoaHongMon/",
+    "numberofimg":"3",
+    "price": "149.000 VNĐ/Chậu",
+    "pricenumber": "149000",
+    "description": "Hoa Hồng Môn",
+    "newarrival" : "no"
+  },
+  "14": {
     "id": "HHO1",
     "species": "hoahong",
     "name": "Hoa Hồng",
     "imgdir": "assets/nhhoa/HHO1-HoaHong/",
+    "numberofimg":"2",
     "price": "12.000 VNĐ/Cành",
     "pricenumber": "12000",
     "description": "Hoa Hồng",
     "newarrival" : "no"
   },
-  "10": {
+  "15": {
     "id": "HHO2",
     "species": "hoahong",
     "name": "Hoa Hồng Vàng",
     "imgdir": "assets/nhhoa/HHO2-HoaHongVang/",
+    "numberofimg":"2",
     "price": "12.000 VNĐ/Cành",
     "pricenumber": "12000",
     "description": "Hoa Hồng Vàng",
     "newarrival" : "no"
   },
-  "11": {
+  "16": {
     "id": "HHO3",
     "species": "hoahong",
     "name": "Hoa Hồng Vàng",
     "imgdir": "assets/nhhoa/HHO3-HoaHongVang/",
-    "price": "249.000 VNĐ/Chậu",
+    "numberofimg":"3",
+    "price": "249.000 VNĐ/Bình",
     "pricenumber": "249000",
     "description": "Hoa Hồng Vàng",
     "newarrival" : "no"
   },
-  "12": {
-    "id": "HSE1",
-    "species": "hoasen",
-    "name": "Hoa Sen",
-    "imgdir": "assets/nhhoa/HSE1-HoaSen/",
-    "price": "199.000 VNĐ/Chậu",
-    "pricenumber": "199000",
-    "description": "Hoa Sen",
-    "newarrival" : "no"
-  },
-  "13": {
-    "id": "HSE2",
-    "species": "hoasen",
-    "name": "Hoa Sen",
-    "imgdir": "assets/nhhoa/HSE2-HoaSen2/",
-    "price": "199.000 VNĐ/Chậu",
-    "pricenumber": "199000",
-    "description": "Hoa Sen",
-    "newarrival" : "no"
-  },
-  "14": {
-    "id": "HSE3",
-    "species": "hoasen",
-    "name": "Hoa Sen",
-    "imgdir": "assets/nhhoa/HSE3-HoaSen3/",
-    "price": "199.000 VNĐ/Chậu",
-    "pricenumber": "199000",
-    "description": "Hoa Sen",
-    "newarrival" : "yes"
-  },
-  "15": {
-    "id": "HMAI1",
-    "species": "hoakhac",
-    "name": "Hoa Mai Bonsai",
-    "imgdir": "assets/nhhoa/HMAI1-HoaMai/",
-    "price": "239.000 VNĐ/Chậu",
-    "pricenumber": "239000",
-    "description": "Hoa Mai Bonsai",
-    "newarrival" : "yes"
-  },
-  "16": {
-    "id": "HMAI2",
-    "species": "hoakhac",
-    "name": "Hoa Mai",
-    "imgdir": "assets/nhhoa/HMAI2-HoaMai/",
-    "price": "349.000 VNĐ/Bình",
-    "pricenumber": "349000",
-    "description": "Hoa Mai",
-    "newarrival" : "no"
-  },
   "17": {
-    "id": "HLK1",
-    "species": "hoakhac",
-    "name": "Hoa Loa Kèn",
-    "imgdir": "assets/nhhoa/HLK1-HoaLoaKen/",
+    "id": "HHO4",
+    "species": "hoahong",
+    "name": "Hoa Hồng Trắng",
+    "imgdir": "assets/nhhoa/HHO4-HoaHongTrang/",
+    "numberofimg":"2",
     "price": "199.000 VNĐ/Bình",
     "pricenumber": "199000",
-    "description": "Hoa Loa Kèn",
+    "description": "Hoa Hồng Trắng",
+    "newarrival" : "no"
+  },
+  "18": {
+    "id": "HHO5",
+    "species": "hoahong",
+    "name": "Hoa Hồng Tím",
+    "imgdir": "assets/nhhoa/HHO5-HoaHongTim/",
+    "numberofimg":"4",
+    "price": "99.000 VNĐ/Chậu",
+    "pricenumber": "99000",
+    "description": "Hoa Hồng Tím",
+    "newarrival" : "no"
+  },
+  "19": {
+    "id": "HLA0",
+    "species": "hoalan",
+    "name": "Cành Lan",
+    "imgdir": "assets/nhhoa/HLA0-CanhLan/",
+    "numberofimg":"2",
+    "price": "55.000 VNĐ/Cành",
+    "pricenumber": "55000",
+    "description": "Một cành có 5 bông và 2-3 nhụy",
+    "newarrival" : "no"
+  },
+  "20": {
+    "id": "HLA1",
+    "species": "hoalan",
+    "name": "Lan Tím",
+    "imgdir": "assets/nhhoa/HLA1-HoaLanTim/",
+    "numberofimg":"4",
+    "price": "179.000 VNĐ/Chậu",
+    "pricenumber": "179000",
+    "description": "Hoa Lan Tím",
+    "newarrival" : "no"
+  },
+  "21": {
+    "id": "HLA2",
+    "species": "hoalan",
+    "name": "Lan Vàng Hồng",
+    "imgdir": "assets/nhhoa/HLA2-HoaLanVangHong/",
+    "numberofimg":"4",
+    "price": "179.000 VNĐ/Bình",
+    "pricenumber": "179000",
+    "description": "Hoa Lan màu Vàng và Hồng",
+    "newarrival" : "no"
+  },
+  "22": {
+    "id": "HLA3",
+    "species": "hoalan",
+    "name": "Lan Nữ Hoàng",
+    "imgdir": "assets/nhhoa/HLA3-HoaLanNuHoang/",
+    "numberofimg":"4",
+    "price": "119.000 VNĐ/Bình",
+    "pricenumber": "119000",
+    "description": "Lan Nữ Hoàng màu trắng và vàng nhạt",
+    "newarrival" : "no"
+  },
+  "23": {
+    "id": "HLA4",
+    "species": "hoalan",
+    "name": "Lan Nữ Hoàng",
+    "imgdir": "assets/nhhoa/HLA4-HoaLanNuHoang/",
+    "numberofimg":"3",
+    "price": "149.000 VNĐ/Chậu",
+    "pricenumber": "149000",
+    "description": "Lan Nữ Hoàng màu vàng và tím",
+    "newarrival" : "no"
+  },
+  "24": {
+    "id": "HLA5",
+    "species": "hoalan",
+    "name": "Lan Trắng Tím",
+    "imgdir": "assets/nhhoa/HLA5-HoaLanTrangTim/",
+    "numberofimg":"2",
+    "price": "219.000 VNĐ/Chậu",
+    "pricenumber": "219000",
+    "description": "Hoa Lan bằng vải voan màu trắng và tím",
+    "newarrival" : "no"
+  },
+  "25": {
+    "id": "HLA7",
+    "species": "hoalan",
+    "name": "Lan Trắng",
+    "imgdir": "assets/nhhoa/HLA7-HoaLanTrang/",
+    "numberofimg":"2",
+    "price": "179.000 VNĐ/Chậu",
+    "pricenumber": "179000",
+    "description": "Hoa Lan màu Trắng",
     "newarrival" : "no"
   }
 }

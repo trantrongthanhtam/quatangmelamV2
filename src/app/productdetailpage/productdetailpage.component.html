@@ -11,7 +11,7 @@
       </div>
     </figure>
     <div class="imgshow">
-      <figure>
+      <figure >
         <img
           [attr.data-imgNo]="1"
           (click)="onImgChange($event.target)"
@@ -45,21 +45,23 @@
   </section>
   <section class="productdescription">
     <h2>{{ product[0].name }}</h2>
+    <h3>-{{ product[0].id }}-</h3>
     <p>Giá: {{ product[0].price }}</p>
-    <p>Mô tả: {{ product[0].description }}</p>
+    <p style='text-align: left;'>Mô tả: {{ product[0].description }}</p>
     <button
       href="#"
-      class="btn btn-primary"
+      class="btn btn-secondary"
       (click)="addToCart(product); $event.stopPropagation()"
     >
       Mua sản phẩm
     </button>
   </section>
-  <section class="grid ml-auto mr-auto mt-3">
+  <hr>
+  <section class="grid ml-auto mr-auto mt-5">
     <h1>
       Sản phẩm nổi bật
     </h1>
-    <div class="cardcontainer" *ngFor="let product of randompickproducts">
+    <div class="cardcontainer" data-aos='fade-up' *ngFor="let product of randompickproducts">
       <div
         class="card m-3"
         [routerLink]="['/products', product.id]"

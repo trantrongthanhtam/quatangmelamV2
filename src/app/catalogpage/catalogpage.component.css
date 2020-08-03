@@ -29,6 +29,7 @@ figure {
 }
 .card {
     cursor: pointer;
+    width: 18rem;
 }
 
 @media only screen and (max-width: 990px) {
@@ -46,5 +47,24 @@ figure {
     }
     .filterwrapper >.form-check {
         margin: 0rem 1rem;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .card{
+        width: 10rem;
+        height: 19rem;
+    }
+    .card-body {
+        padding: 0.5rem;
+    }
+    .card-body h5 {
+        font-size: large;
+    }
+    figure {
+        height: 11rem;
+        margin-bottom: 0.2rem;
+    }
+    .filterwrapper{
+        padding-left: 3.5rem;
     }
 }

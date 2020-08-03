@@ -39,6 +39,7 @@
     text-align: center;
     width: 50%;
     place-items: top center;
+    padding: 0 1rem;
 }
 
 .grid {
