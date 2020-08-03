@@ -1,7 +1,7 @@
 <div class="wrapper fixed-top">
   <nav class="navbar navbar-expand-md navbar-light  ml-auto mr-auto pt-0 ">
-    <a class="navbar-brand p-0 pt-2" [routerLink]="['/home']" routerLinkActive="router-link-active" ><figure><img src="assets/Logo-transparent.png" width="110px" height="auto" id="bigscreenlogo" alt="Qua Tang Me Lam Logo"><img src="assets/Logo-transparent-noname.png" width="65px" height="auto" id="smallscreenlogo" alt="Qua Tang Me Lam Logo"></figure> </a>
-    <span class="brandname">Quà Tặng Mẹ Làm</span>
+    <a class="navbar-brand p-0 pt-2" [routerLink]="['/home']" routerLinkActive="router-link-active" data-toggle="collapse" data-target=".navbar-collapse.show"><figure><img src="assets/Logo-transparent.png" width="110px" height="auto" id="bigscreenlogo" alt="Qua Tang Me Lam Logo"><img src="assets/Logo-transparent-noname.png" width="65px" height="auto" id="smallscreenlogo" alt="Qua Tang Me Lam Logo"></figure> </a>
+    <span class="brandname" [routerLink]="['/home']" routerLinkActive="router-link-active" data-toggle="collapse" data-target=".navbar-collapse.show" style="cursor: pointer;">Quà Tặng Mẹ Làm</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

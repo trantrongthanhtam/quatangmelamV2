@@ -1,24 +1,52 @@
-<section class="callforaction ml-auto mr-auto mt-5">
+<section class="callforaction ml-auto mr-auto ">
   <figure>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class='d-block'src="assets/background-plant3.png" width="100%" height="auto" alt="">
+          <img class='d-block'src="assets/background-plant3.png"  alt="">
         </div>
         <div class="carousel-item">
-          <img class='d-block'src="assets/background-plant2.png" width="100%" height="auto" alt="">
+          <img class='d-block'src="assets/background-plant2.png"  alt="">
         </div>
         <div class="carousel-item">
-          <img class='d-block'src="assets/background-plant.png" width="100%" height="auto" alt="">
+          <img class='d-block'src="assets/background-plant.png"  alt="">
         </div>
       </div>
     </div>
   </figure>
-  <div class="message d-flex flex-column justify-content-center"><h2>Hoa là món quà vô giá mà thiên nhiên ban tặng, mỗi loài hoa mang một vẻ đẹp và một ý nghĩa riêng, hiểu được điều đó chúng tôi luôn cố gắng nắng nót từng cánh hoa để giữ lại vẻ đẹp tự nhiên vốn có của mỗi loại hoa, để bạn thật yên tâm chọn sản phẩm của chúng tôi làm quà tặng, trang trí nhà cửa, nơi làm việc,...</h2>
+  <div class="message d-flex flex-column justify-content-center"><h2>Hoa là món quà vô giá mà thiên nhiên ban tặng, mỗi loài hoa mang một vẻ đẹp và một ý nghĩa riêng, hiểu được điều đó chúng tôi luôn cố gắng nắn nót từng cánh hoa để giữ lại vẻ đẹp tự nhiên vốn có của mỗi loại hoa, để bạn thật yên tâm chọn sản phẩm của chúng tôi làm quà tặng, trang trí nhà cửa, nơi làm việc,...</h2>
     <button class='btn btn-dark text-bold ml-auto mr-auto' [routerLink]="['/products']" routerLinkActive="router-link-active" >Mua ngay</button></div>
 </section>
+<section class="grid ml-auto mr-auto">
+  <h1>
+    Sản phẩm nổi bật
+  </h1>
+  <div class='cardcontainer' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" *ngFor="let product of randompickproducts; index as i">
+      <div class="card m-3"  [routerLink]="['/products',product.id]" routerLinkActive="router-link-active">
+        <figure>
+          <img
+            [src]="product.imgdir + '/' + product.id + '-1.jpg'"
+            class="card-img-top"
+            alt="product.name"
+          />
+        </figure>
+        <div class="card-body text-center pt-0">
+          <h5 class="card-title mt-0">{{ product.name }}</h5>
+          <p class="card-text">
+            {{ product.price }}
+          </p>
+          <button href="#" class="btn btn-primary" (click)="addToCart(product);$event.stopPropagation()">
+            Mua sản phẩm
+          </button>
+        </div>
+      </div>
+
+  </div>
+</section>
+<hr />
+
 <section
-  class="collection mt-5 d-flex ml-auto mr-auto flex-wrap justify-content-center"
+  class="collection  d-flex ml-auto mr-auto flex-wrap justify-content-center"
 >
   <h1>
     Bộ Sưu Tập
@@ -82,32 +110,5 @@
         Các Loại Hoa Khác
       </h5>
     </div>
-  </div>
-</section>
-<hr />
-<section class="grid ml-auto mr-auto">
-  <h1>
-    Sản phẩm nổi bật
-  </h1>
-  <div class='cardcontainer' data-aos='fade-up' data-aos-duration="1000" data-aos-once="true" *ngFor="let product of randompickproducts; index as i">
-      <div class="card m-3"  [routerLink]="['/products',product.id]" routerLinkActive="router-link-active">
-        <figure>
-          <img
-            [src]="product.imgdir + '/' + product.id + '-1.jpg'"
-            class="card-img-top"
-            alt="product.name"
-          />
-        </figure>
-        <div class="card-body text-center pt-0">
-          <h5 class="card-title mt-0">{{ product.name }}</h5>
-          <p class="card-text">
-            {{ product.price }}
-          </p>
-          <button href="#" class="btn btn-primary" (click)="addToCart(product);$event.stopPropagation()">
-            Mua sản phẩm
-          </button>
-        </div>
-      </div>
-
   </div>
 </section>

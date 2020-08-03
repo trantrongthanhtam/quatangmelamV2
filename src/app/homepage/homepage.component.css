@@ -1,18 +1,28 @@
 .callforaction {
     display: flex;
     max-width: 1400px;
-
+    height: 100vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
     
 }
 .callforaction > figure {
     height: 80vh;
     width: 50%;
     padding-top: 30px;
-    overflow: visible;
+    margin-bottom: 0;
+    overflow: hidden;
 }
+.callforaction img {
+    height: 73vh;
+}
+.d-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .message {
     width:30vw;
     text-align: justify;
@@ -36,6 +46,7 @@
     width: 16rem;
     cursor: pointer;
 }
+
 .cardcontainer {
     margin: 1.2rem;
 }
@@ -67,9 +78,6 @@ h5 {
     .message>h2 {
         font-size: 1.3rem;
     }
-    .callforaction > figure {
-        height: 60vh;
-    }
 }
 @media only screen and (max-width: 767px) {
     .message>h2 {
@@ -80,16 +88,30 @@ h5 {
         width: 70vw;
         height: auto;
     }
+    .callforaction img {
+        height: 60vh;
+    }
     .message {
         width: 90vw;
         padding: 0;
     }
     .callforaction{
       flex-direction: column;
+      height: 87vh;
     }
 }
 
 @media only screen and (max-width: 660px) {
+    .grid {
+        margin-top: 2rem;
+    }
+    .callforaction img {
+        height: auto;
+        width: 100%;
+    }
+    .callforaction{
+        height: auto;
+    }
     .collection > .card {
         width: 8rem;
     }
@@ -119,7 +141,7 @@ h5 {
     }
     .cardcontainer button {
         padding: 0.4rem;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .card-text, .card-title {
         margin-bottom: 0.2rem;

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face{
     font-family: Quicksand;
-    src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf');
+    src: url('./assets/fonts/static/Quicksand-Medium.ttf');
 }
 *{
     padding: 0;

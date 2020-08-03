@@ -16,7 +16,7 @@ export class CatalogpageComponent implements OnInit {
   public minPrice:number = 0; maxPrice:number = 1000;
   private allproducts=[];
   private queryfilter;
-  public checkedradio=[['all',true],['hoalan',false],['hoahong',false],['hoasen',false],['hoadai',false]];
+  public checkedradio=[['all',true],['hoalan',false],['hoahong',false],['hoasen',false],['hoadai',false],['hoakhac',false]];
 
   constructor(private store:Store, private route: ActivatedRoute) {
 
