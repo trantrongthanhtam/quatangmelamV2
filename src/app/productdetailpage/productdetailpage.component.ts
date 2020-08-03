@@ -62,6 +62,7 @@ export class ProductdetailpageComponent implements OnInit {
   ngDoCheck() {
     if (this.route.snapshot.paramMap.get('id') !== this.oldID) {
       this.product = this.products.filter(product => product.id == this.route.snapshot.paramMap.get('id'));
+      this.imgNo='1';
     }
     this.oldID = this.route.snapshot.paramMap.get('id');
   }

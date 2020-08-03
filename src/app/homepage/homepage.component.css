@@ -19,7 +19,8 @@
 
 }
 .message>h2 {
-    padding: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .collection {
@@ -64,7 +65,7 @@ h5 {
 
 @media only screen and (max-width: 990px) {
     .message>h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .callforaction > figure {
         height: 60vh;
@@ -72,15 +73,16 @@ h5 {
 }
 @media only screen and (max-width: 767px) {
     .message>h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0;
     }
     .callforaction > figure{
-        width: 80vw;
+        width: 70vw;
         height: auto;
     }
     .message {
-        width: 70vw;
+        width: 90vw;
+        padding: 0;
     }
     .callforaction{
       flex-direction: column;
@@ -89,31 +91,37 @@ h5 {
 
 @media only screen and (max-width: 660px) {
     .collection > .card {
-        width: 10rem;
+        width: 8rem;
     }
     .collection .card-body {
         padding: 1rem;
     }
     .collection h5 {
         font-size: unset;
+        margin-bottom: 0.2rem;
         }
     .cardcontainer {
         margin: 0;
     }
     .cardcontainer .card {
-        width: 10rem;
+        width: 9rem;
+        height: 19rem;
     }
     .cardcontainer figure {
         height: 12rem;
     }
     .cardcontainer .card-body {
-        font-size: smaller;
-        padding: 0.8rem;
+        font-size: 0.8rem;
+        padding: 0.3rem;
     }
     .cardcontainer h5 {
-        font-size: large;
+        font-size: 1rem;
     }
     .cardcontainer button {
         padding: 0.4rem;
+        font-size: 0.7rem;
+    }
+    .card-text, .card-title {
+        margin-bottom: 0.2rem;
     }
 }

@@ -5,6 +5,7 @@
     padding: 2rem 0rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 .imgcontainer {
     width: 50%;
@@ -22,7 +23,6 @@
 .aspect-ratio{
     position: absolute;
     top: -5%;
-    left: 0;
 
 }
 .imgshow {
@@ -85,20 +85,25 @@ figure {
 
     }
     .cardcontainer .card {
-        width: 10rem;
+        width: 9rem;
+        height: 19rem;
     }
     .cardcontainer figure {
         height: 12rem;
     }
     .cardcontainer .card-body {
-        font-size: smaller;
-        padding: 0.8rem;
+        font-size: 0.8rem;
+        padding: 0.3rem;
     }
     .cardcontainer h5 {
-        font-size: large;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: 600;
     }
     .cardcontainer button {
         padding: 0.4rem;
+        font-size: 0.7rem;
+    }
+    .card-text, .card-title {
+        margin-bottom: 0.2rem;
     }
 }

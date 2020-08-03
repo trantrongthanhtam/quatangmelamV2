@@ -1,6 +1,7 @@
 .catalogwrapper{
     max-width: 1400px;
     margin: auto;
+    margin-top: 70px;
 }
 .filterwrapper {
     flex:1;
@@ -51,18 +52,25 @@ figure {
 }
 @media only screen and (max-width: 660px) {
     .card{
-        width: 10rem;
-        height: 19rem;
+        width: 9rem;
+        height: 17.5rem;
     }
     .card-body {
         padding: 0.5rem;
     }
     .card-body h5 {
-        font-size: large;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .card-text {
+        font-size: 0.7rem;
+    }
+    .card button {
+        font-size: 0.8rem;
     }
     figure {
-        height: 11rem;
-        margin-bottom: 0.2rem;
+        height: 10rem;
+        margin-bottom: 0.4rem;
     }
     .filterwrapper{
         padding-left: 3.5rem;
