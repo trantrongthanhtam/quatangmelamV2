@@ -3,6 +3,9 @@
     margin: auto;
     margin-top: 70px;
 }
+.pagination li {
+    cursor: pointer;
+}
 .filterwrapper {
     flex:1;
     padding:2rem ;

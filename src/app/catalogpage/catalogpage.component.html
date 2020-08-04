@@ -96,7 +96,12 @@
     <h1>
       Các sản phẩm
     </h1>
-    <div data-aos="fade-up" data-aos-duration='1000' data-aos-once="true" *ngFor="let product of products; index as i">
+    <nav aria-label="..." class="w-100 d-flex justify-content-center">
+      <ul class="pagination" >
+        <li *ngFor="let page of paging; index as i" [className]="page[0] ? 'active page-item':'page-item'" (click)='onpagechange(i)' ><a class="page-link">{{page[1]}}</a></li>
+      </ul>
+    </nav>
+    <div data-aos="fade-up" data-aos-duration='1000' data-aos-once="true" *ngFor="let product of productsShow; index as i">
       <div class="card m-3" [routerLink]="['/products',product.id]" routerLinkActive="router-link-active" >
         <figure>
           <div class="onhover">Xem chi tiết</div>
@@ -118,5 +123,10 @@
         </div>
       </div>
     </div>
+    <nav aria-label="..." class="w-100 d-flex justify-content-center">
+      <ul class="pagination" >
+        <li *ngFor="let page of paging; index as i" [className]="page[0] ? 'active page-item':'page-item'" (click)='onpagechange(i)' ><a class="page-link">{{page[1]}}</a></li>
+      </ul>
+    </nav>
   </div>
 </div>

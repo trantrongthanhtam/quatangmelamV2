@@ -35,10 +35,24 @@
 
 .collection {
     max-width: 1200px;
-
+    position: relative;
 }
 .collection > .card {
     width: 18rem;
+}
+.collection-bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    padding-top: 3rem;
+    left:0;
+    width: 100%;
+    height: 100%;
+    font-size: 150px;
+    opacity: 0.3;
+    z-index: -1;
 }
 .card {
     margin: 1rem;
@@ -77,6 +91,9 @@ h5 {
 @media only screen and (max-width: 990px) {
     .message>h2 {
         font-size: 1.3rem;
+    }
+    .collection-bg {
+        display: none;
     }
 }
 @media only screen and (max-width: 767px) {

@@ -1,3 +1,6 @@
+.checkoutwrapper {
+    margin-top: 5rem;
+}
 .header {
     max-width: 800px;
     width: 100%;
@@ -5,7 +8,7 @@
     display: grid;
     grid-template-columns: 30% 25% 15% 25% 5%;
     margin-bottom: 20px;
-    text-decoration: underline;
+    font-weight: bold;
     margin-top: 80px;
 }
 
@@ -43,6 +46,7 @@ figure {
     height: 50px;
     padding: 1rem 0.2rem 1rem 2rem;
     overflow: hidden;
+    cursor: pointer;
 
 }
 figure >img{
@@ -72,8 +76,19 @@ form{
     transform: rotate(180deg);
     -moz-transform: rotate(180deg);
 }
+.sum {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
+}
 
 @media only screen and (max-width: 767px) {
+    .checkoutwrapper{
+        margin-top: 1rem;
+    }
     figure {
         flex-direction: column;
         padding-left: 0;

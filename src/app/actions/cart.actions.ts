@@ -6,6 +6,7 @@ export enum ActionTypes {
   Remove = '[Product] Remove from cart',
   UpQuantity = '[Product] Increase product quantity',
   DownQuantity = '[Product] Decrease product quantity',
+  Reset ='[Product] Reset product quantity',
   LoadItems = '[Products] Load items from server',
   LoadSuccess = '[Products] Load success'
 }
@@ -41,5 +42,8 @@ export class LoadItems implements Action {
 
   constructor(public payload: Product[]) {}
 }
+export class ResetCart implements Action {
+  readonly type = ActionTypes.Reset;
+}
 
-export type ActionsUnion = AddToCart | RemoveFromCart | LoadItems | GetItems|UpQuantity|DownQuantity; 
+export type ActionsUnion = AddToCart | RemoveFromCart | LoadItems | GetItems|UpQuantity|DownQuantity|ResetCart; 

@@ -15,12 +15,12 @@ export class ProductdetailpageComponent implements OnInit {
   public randompickproducts=[]; 
   private products=[];
   public imgNo = '1';
+  public numberofproductimages:number;imgshow=[];
   private oldID;
   constructor(private route: ActivatedRoute,private store:Store) { }
 
   onImgChange(e){
     this.imgNo = e.getAttribute('data-imgno');
-    console.log(this.imgNo);
   }
   onIDChange(){
     this.product = this.products.filter(product => product.id == this.route.snapshot.paramMap.get('id'))
@@ -36,8 +36,11 @@ export class ProductdetailpageComponent implements OnInit {
   ngOnInit() {
     AOS.init();
     this.products = Object.values(products);
-    console.log(this.products);
     this.product = this.products.filter(product => product.id == this.route.snapshot.paramMap.get('id'))
+    this.numberofproductimages=parseInt(this.product[0].numberofimg);
+    for (let i=0;i<this.numberofproductimages;i++){
+      this.imgshow.push(`${this.product[0].imgdir}${this.product[0].id}-${i+1}.jpg`)
+    }
     function containsObject(obj, list, currentproduct) {
       var i;
       for (i = 0; i < list.length; i++) {
@@ -57,12 +60,16 @@ export class ProductdetailpageComponent implements OnInit {
         i++;
       } else continue;
     }
-    console.log(this.randompickproducts);
   }
   ngDoCheck() {
     if (this.route.snapshot.paramMap.get('id') !== this.oldID) {
       this.product = this.products.filter(product => product.id == this.route.snapshot.paramMap.get('id'));
       this.imgNo='1';
+      this.imgshow=[];
+      this.numberofproductimages=parseInt(this.product[0].numberofimg);
+    for (let i=0;i<this.numberofproductimages;i++){
+      this.imgshow.push(`${this.product[0].imgdir}${this.product[0].id}-${i+1}.jpg`)
+    }
     }
     this.oldID = this.route.snapshot.paramMap.get('id');
   }

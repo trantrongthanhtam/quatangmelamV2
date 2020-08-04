@@ -129,6 +129,9 @@ export default function cartReducer(state = initialState, action: ActionsUnion) 
 					calculateTotal < 0 ? 0 : calculateTotal),
 				cartProducts: updatedCart
 			};
+			case ActionTypes.Reset:
+				state = initialState;
+			return state;
 		default:
 			return state;
 	}
