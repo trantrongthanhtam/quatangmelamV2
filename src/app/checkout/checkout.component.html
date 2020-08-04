@@ -1,6 +1,6 @@
 <div
   class="checkoutwrapper d-flex flex-column align-items-center"
-  *ngIf="checkoutitems != []"
+  
 >
   <div class="header">
     <div class="a">Sản phẩm</div>
@@ -8,6 +8,7 @@
     <div class="c">Số lượng</div>
     <div class="d">Tạm tính</div>
   </div>
+  <div *ngIf='checkoutitems==""' class="noitem"><img src="assets/styling-vector/cry-face.svg" width="100px" height="100px" alt="">&nbsp;&nbsp; Bạn chưa mua sản phẩm nào</div>
   <div class="body" *ngFor="let item of checkoutitems">
     <figure class="a" [routerLink]="['/products',item.id]" routerLinkActive="router-link-active" >
       <img

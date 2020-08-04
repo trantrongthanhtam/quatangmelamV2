@@ -15,7 +15,7 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./checkout.component.css'],
 })
 export class CheckoutComponent implements OnInit {
-  public checkoutitems;
+  public checkoutitems=[];
   public sum;
   private oldcheckout;
   customerForm;

@@ -1,6 +1,16 @@
 .checkoutwrapper {
     margin-top: 5rem;
 }
+.noitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    max-height: 50vh;
+    background-color: #fff;
+}
 .header {
     max-width: 800px;
     width: 100%;
