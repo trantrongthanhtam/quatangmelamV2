@@ -5,6 +5,45 @@
     justify-content: center;
     
 }
+.infowrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: 0  2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contactwrapper {
+    width: 50%;
+    padding: 0.5rem;
+}
+.mapwrapper {
+    display: flex;
+    padding: 0.5rem;
+    width: 50%;
+    height: 300px;
+    justify-content: center;
+}
+iframe {
+   max-width: 90vw;
+   width: 100%;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
 p{
     font-weight: bold;
+}
+
+@media only screen and (max-width:767px) {
+    .infowrapper{
+       flex-direction: column;
+    }
+    .infowrapper > * {
+        width: 100%;
+    }
+    .mapwrapper{
+        height: 200px;
+    }
 }
