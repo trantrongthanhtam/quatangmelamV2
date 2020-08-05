@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CatalogpageComponent } from './catalogpage/catalogpage.component';
 import { FooterComponent } from './footer/footer.component';
-
+import {FacebookModule} from 'ngx-facebook';
 import { StoreModule} from '@ngrx/store';
 import cartReducer from './reducers/cart.reducer';
 import { CheckoutComponent } from './checkout/checkout.component';
@@ -28,7 +28,8 @@ import { ProductdetailpageComponent } from './productdetailpage/productdetailpag
       BrowserModule,
       AppRoutingModule,
       StoreModule.forRoot({cart:cartReducer}),
-      FormsModule, ReactiveFormsModule
+      FormsModule, ReactiveFormsModule,
+      FacebookModule.forRoot()
    ],
    providers: [],
    bootstrap: [
