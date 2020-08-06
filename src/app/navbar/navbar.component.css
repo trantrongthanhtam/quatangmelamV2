@@ -122,20 +122,21 @@ ul li:last-child{
         position: fixed;
         display: flex;
         place-items: center;
-        bottom:15px;
+        bottom:17px;
         left: 15px;
-        background-color: rgb(94, 189, 221);
+        background-color: #28a745;
         border-radius: 50%;
-        width: 55px;
-        height: 55px;
-        animation: checkoutfloating 1.5s   infinite;
-        transition: ease-in-out;
+        width: 60px;
+        height: 60px;
+        /* animation: checkoutfloating 1.5s   infinite;
+        transition: ease-in-out; */
+        box-shadow: 0px 2px 10px -1px;
     }
     .float-checkout span{
         display: none;
     }
     .float-checkout .showcart {
-        bottom: 25px;
+        bottom: 26px;
     }
     .float-checkout >a {
         padding: 0;
