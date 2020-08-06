@@ -1,7 +1,7 @@
 .catalogwrapper{
     max-width: 1400px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 98.6px;
 }
 .pagination li {
     cursor: pointer;
@@ -9,6 +9,12 @@
 .filterwrapper {
     flex:1;
     padding:2rem ;
+    margin-right: 1rem;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.form-check {
+    margin-bottom: 1rem;
 }
 .grid {
     flex:4;
@@ -18,6 +24,7 @@
     flex-direction: row;
     margin: 0;
     padding-top: 2rem;
+    border-radius: 15px;
     background-color: #fff;
 }
 
@@ -59,18 +66,22 @@ figure {
 @media only screen and (max-width: 990px) {
     .catalogwrapper{
         flex-direction: column;
+        margin-top: 70px;
     }
     .filterwrapper{
-        display: flex;
-        flex-direction: row;
-        flex-flow: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
     .filterwrapper>h3 {
         width: 100%;
+        grid-column: 1/-1;
         text-align: center;
     }
     .filterwrapper >.form-check {
-        margin: 0rem 1rem;
+        margin-bottom: 0.2rem;
     }
 }
 @media only screen and (max-width: 660px) {

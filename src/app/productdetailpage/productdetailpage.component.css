@@ -7,6 +7,10 @@
     margin-right: auto;
     margin-top: 80px;
 }
+hr {
+    width: 100%;
+    margin-top: 2rem;
+}
 .imgcontainer {
     width: 50%;
     display: flex;
@@ -125,8 +129,4 @@ figure {
         width: 80vw;
         height: auto;
     }
-}
-
-@media only screen and (max-width: 500px) {
-    
 }

@@ -17,6 +17,8 @@
 }
 .callforaction img {
     height: 73vh;
+    max-height: 80vw;
+    cursor: pointer;
 }
 .d-block {
     margin-left: auto;

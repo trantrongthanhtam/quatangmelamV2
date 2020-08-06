@@ -27,14 +27,14 @@
     <p style='text-align: left;'>Mô tả: {{ product[0].description }}</p>
     <button
       href="#"
-      class="btn btn-secondary"
+      class="btn btn-success"
       (click)="addToCart(product); $event.stopPropagation()"
     >
       Mua sản phẩm
     </button>
   </section>
   <hr>
-  <section class="grid ml-auto mr-auto mt-5">
+  <section class="grid ml-auto mr-auto mt-2">
     <h1>
       Sản phẩm nổi bật
     </h1>
@@ -58,7 +58,7 @@
           </p>
           <button
             href="#"
-            class="btn btn-primary"
+            class="btn btn-success"
             (click)="addToCart2(product);$event.stopPropagation()"
           >
             Mua sản phẩm
